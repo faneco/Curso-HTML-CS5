@@ -1,0 +1,270 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light'); /* fonte do google.com/fonts */
+@font-face{ /* usar para colocar imagem com tipo de fonte, depois so trocar a fonte */
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+p{
+	text-align: justify; /* justificar o texto */
+	text-indent: 50px; /* parágrafo no texto */
+}
+
+a{ /* link */
+	color: #606060; /* cor da letra */ 
+	text-decoration: none; /* tirar palava sublinhada */
+
+}
+
+a:hover{ /* link */
+	text-decoration: underline; /* quando passa o mouse
+	em cima do link fica sublinhado */
+}
+
+/*
+h1{
+	text-align: center;  /* deuxa letra no centro 
+}
+*/
+
+header#cabecalho img#icone{ /* imagem oculos */
+	position: absolute; /* mover imagem em qualquer lugar */
+	left: 950px; /* mover para esquerda */
+	top: 50px; /* mover para cima */
+}
+
+header#cabecalho{
+	border-bottom: 1px #606060 solid; /* linha, tamanho, cor e reta-continua */
+	height: 150px; /* para descer a linha */
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px; /* colocar imagem em todo logo tipo
+	(../) para voltar um pasta. no-repeat= nao deixa repetir 0px deslocamento latera e 100px vertical  */
+}
+
+header#cabecalho h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30px; /* quantidade de cor da letra */
+	color: #606060; /* tipo de cor */
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6); /* deixa um sobra na letra */	
+	padding: 0px;
+	margin-bottom: 0px: /* margem de baixo da letra */ 
+}
+
+header#cabecalho h2{
+	font-family: 'Shadows Into Light', cursive; /* fonte do google */
+	color: #888888;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+	padding: 0px;
+	margin-top: 0px; /* margem de cima da letra */
+
+}
+
+/* Formatação de imagens com legendas */
+
+
+body{
+/*
+	background-image: url("cinza.jpg");
+*/
+	font-family: Arial, sans-serif; /* tirar serifa das letras */
+	background-color: #dddddd; /* cor do fundo */
+	color: rgb(0, 0, 0, 1);
+
+}
+
+div#interface{
+	width: 900px; /*serve para limitar o texto exemplo deixa texto metade da folha */
+	background-color: #ffffff; /* cor do fundo do texto */
+	margin: -20px auto 10px auto; /* margem cima, direita, baixo e esquerda */
+	box-shadow: 0px 0px 10px black; /* criar sobra na borda- 
+	deslocamento lateral, verdical, espalhamento e cor */
+	padding: 10px 10px 10px 10px; /* da um espaço na borda */
+}
+
+
+figure.foto-legenda { /* borda da figura */
+	position:  relative; /* deixa legenda na imagem */
+	border: 8px solid white; /* coloca a borda e cor */
+	box-shadow: 1px 1px 4px black; /* criar sombra */
+}
+
+figure.foto-legenda img{ /* ajusta o tamanho da borda */
+	width: 100%; /* largura */
+	height: 100%; /* altura */
+}
+
+figure.foto-legenda figcaption{ /* titulo  da imagem */
+	opacity: 0; /* fazer letra da legenda em cima da imagem sumir para usar hover  */
+	position: absolute; /* mover qualquer lugar dentro da imagem */
+	top: 0px; /* mover para cima */
+	background: rgb(0, 0, 0, 0.4); /* cor na legenda da figura */
+	color: white; /* deixa letra branca */
+	width: 100%; /* largura da borda transparente */
+	height: 100%; /* altura da borda transparente */
+	padding: 10px; /* deixa letra maior em cima da imagem */
+	box-sizing: border-box; /* nao deixa borda transparente  sair da imagem */
+	transition: opacity 1s; /* tempo para aparece o hover */
+}
+
+figure.foto-legenda:hover figcaption{ /* fazer efeito quando vc 
+	coloca o mouse em cima da imagem aparece a letra */
+	opacity: 1; 
+}
+
+/* Formatação do Menu */
+
+
+
+nav#menu {
+	display: block; /* para poder mover em cima das letras */
+}
+
+nav#menu ul{ /* link */
+	list-style: none; /* tirar marcado da frente do numero */
+	text-transform: uppercase; /* deixa letra todas maisculas */
+	position: absolute; /* vai pode mover em qualquer lugar no site */
+	top: -20px; /* mover para cima */
+	left: 500px; /* mover para esquerda */
+}
+
+nav#menu li{
+	display: inline-block; /* deixa a linha horizontal */
+	background-color: #dddddd; /* cor do fundo da letra */
+	padding: 10px; /* espaço da cor do fundo */
+	margin: 2px; /* espaco de uma letra e outra */
+	transition: background-color 1s; /* tempo de escurecer*/
+}
+
+nav#menu li:hover{ 
+	background-color: #606060; /* efeito de escurecer imagem 
+	ou letra */
+}
+
+nav#menu h1{
+	display: none; /* serve para esconder a letra */
+}
+
+nav#menu a{
+	color: #000000; /* cor do link */
+	text-decoration: none; /* tirar sublinhado */
+}
+
+nav#menu a:hover{
+	color: #ffffff; /* trocar a cor do link quando colocar 
+	mouse em cima dele. */
+	text-decoration: underline; /* deixa o link sublinhado */
+}
+
+section#corpo{
+	display: block; /* deixa bloco */
+	width: 480px; /* tamanho do texto */
+	float: left; /* esquerda */
+	border-right: 1px solid #606060; /* linha descendo */
+	padding-right: 15px; /* mover a linha */
+}
+
+article#noticia-principal h2{
+	font-size: 13pt; /*tamanho  da letra; */
+	color: #606060; /* cor da letra */
+	background-color: #dddddd; /* cor do fundo da letra */
+	padding: 5px 0px 5px 0px;
+	margin: 10px 0px 10px 0px; /*margem  da letra */
+}
+
+header#cabecalho-artigo h1{
+	font-family: 'FonteLogo', sans-serif; /*fonte da letra*/
+	font-size: 20pt; /*tamanho da letra */
+	color: #606060; /* cor da letra */
+
+}
+
+.direita{
+	text-align: right;
+}
+
+header#cabecalho-artigo h2{
+	font-size: 13pt /* tamanho da letra */
+	color: #cecece; /* cor da letra */
+	background-color: #ffffff; /* cor da letra */
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+header#cabecalho-artigo h3{
+	font-size: 12px;
+	color: #606060;
+
+}
+
+
+table#tabelaspec{
+	border: 1px solid #606060; /* borda */
+	border-spacing: 0px; /* tirar linha dupla da tabela */
+	margin-left: auto; /* esquerda */
+	margin-right: auto; /* centro */
+
+}
+
+table#tabelaspec td{
+	border: 1px solid #606060; /* borda de cada linha da tabela */
+	padding: 10px; /* espaço de cada linha dentro da tabela */
+	text-align: center;
+	vertical-align: middle;
+}
+
+aside#lateral{
+	display: block;
+	width: 380px;
+	float: right;
+	background-color: #dddddd; 
+	padding: 10px;
+	margin-top: 10px; /* sombra da margem */
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+aside#lateral h1{
+	font-family: 'FonteLogo', sans-serif; /* fonte */
+	font-size: 20pt; /* tamanho */
+	color: #606060; /* cor da letra */
+	margin-top: 0px; /* subir a margem */
+}
+
+aside#lateral h2{
+	background-color: #606060;
+	font-size: 13pt;
+	color: #ffffff;
+
+}
+
+footer#rodape{
+	clear: both; /* deixa o rodape la em baixo  */
+	border-top: 1px solid #606060;
+
+}
+
+table#tabelaspec td.ce{
+	color: #ffffff; /* cor  da letra */
+	background-color: #606060; /* cor da tabela esquerda */
+	vertical-align: top; /* linha da tabela alinhada para cima*/
+	font-weight: bold; /* tipo  de fonte */
+}
+
+table#tabelaspec td.cd{
+	background-color: #cecece; /* corda tabela direita */
+}
+
+table#tabelaspec caption{ /* titulo da tabela */
+	color: #888888; /* cor*/
+	font-size: 13pt; /* tamanho */
+	font-weight: bolder; /* tipo de fonte */
+}
+
+table#tabelaspec caption span{ /* data da tabela*/
+	display: block; /* quebra ele em bloco */
+	float: right; /* flutuação direita */
+	color: #000000; /* cor */
+	font-size: 8pt; /* tamanho da fonte */
+	margin-top: 10px; /* margem do topo */
+}
+
+footer#rodape p{
+	text-align: center; /* centralizar o texto */
+}

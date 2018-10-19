@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+form{
+	width: 500px; /* largura */
+	margin: auto; /* margem cetralisada */
+}
+
+input, textarea{
+	font-family: sans-serif; /* deixa letra mais redondinha tirando
+	serif das letra */
+	font-weight: normal; /* para nao ficar em negrito */
+	font-size: 13pt; /* tamanho das letra */
+	background-color: rgb(255, 255, 255, 0.8);
+
+}
+
+input:hover, textarea:hover{ 
+	background-color: #dddddd; /* caixa para digitar o nome,
+	vai ficar com quadrado meio prata, quando passar o mouse
+	em cima dele */
+}
+
+legend{
+	color: #888888; /* cor da letra */
+	font-weight: bold; /* deixa com tipo de negrito */
+	font-size: 13pt; /* tamanho da letra */
+	font-family: sans-serif;
+}
+
+fieldset{
+	border-color: #cecece; /*cor da linha */
+	margin: 20px; /*diminuir o tamnho do quadro*/
+}
+
+fieldset#sexo{
+	width: 150px;
+}
+
+fieldset#usuario{
+	background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
+	/* para colocar um imagem primeiro 95% lateral 95% vertical */
+}
+
+fieldset#endereco{
+	background: url("../_imagens/icone-endereco.png") no-repeat 95% 95%;
+	/* para colocar um imagem primeiro 95% lateral 95% vertical */
+}
+
+fieldset#mensagem{
+	background: url("../_imagens/icone-mensagem.png") no-repeat 95% 95%;
+	/* para colocar um imagem primeiro 95% lateral 95% vertical */
+}
+
+fieldset#pedido{
+	background: url("../_imagens/icone-pagamento.png") no-repeat 95% 95%;
+	/* para colocar um imagem primeiro 95% lateral 95% vertical */
+}

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+div#tv-radio{ /* coloca a imagem da tv e radio */
+	width: 900px; /* largura*/
+	height: 580px; /* altura*/
+	margin: auto; /* centralisado */
+	background: url("../_imagens/radio-tv.png") no-repeat;
+}
+
+audio#musica{ /* colocar musica em cima da imagens */
+	display: block; /* exibir como bloco */
+	position: relative; /* posicionamento */
+	left: 575px;/*esquerda */
+	top: 500px;/* cima*/ 
+	width: 300px; /*largura*/
+}
+
+video#filme{
+	display: block;
+	position: relative;
+	left: 90px;
+	top: 85px;
+	width: 440px;
+}
+
+video#video02{
+	display: block;
+	position: relative;
+	width: 480px;
+
+}
+
+video#video01{
+	display: block;
+	position: relative;
+	width: 380px;
+	margin: auto;
+}
